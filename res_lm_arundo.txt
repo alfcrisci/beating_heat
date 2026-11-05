@@ -1,0 +1,245 @@
+[[1]]
+
+Call:
+lm(formula = ALA ~ t_lag0_mean + t_lag7_max + t_lag7_mean, data = arundo_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.26421 -0.11778 -0.02460  0.07989  0.34587 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.27565    0.17922  -1.538 0.130347    
+t_lag0_mean -0.05279    0.01256  -4.203 0.000109 ***
+t_lag7_max   0.12863    0.02258   5.695 6.48e-07 ***
+t_lag7_mean -0.08916    0.01879  -4.746 1.77e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1455 on 50 degrees of freedom
+Multiple R-squared:  0.4277,	Adjusted R-squared:  0.3934 
+F-statistic: 12.46 on 3 and 50 DF,  p-value: 3.341e-06
+
+
+[[2]]
+
+Call:
+lm(formula = ALA_D ~ t_lag0_mean + t_lag0_min + t_lag7_max, data = arundo_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.96381 -0.39074 -0.06175  0.07854  1.95891 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.51583    0.63460  -2.389  0.02073 *  
+t_lag0_mean -0.23322    0.05357  -4.353 6.63e-05 ***
+t_lag0_min  -0.14229    0.04472  -3.182  0.00252 ** 
+t_lag7_max   0.35796    0.05733   6.244 9.13e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6105 on 50 degrees of freedom
+Multiple R-squared:  0.4735,	Adjusted R-squared:  0.4419 
+F-statistic: 14.99 on 3 and 50 DF,  p-value: 4.356e-07
+
+
+[[3]]
+
+Call:
+lm(formula = AsA ~ t_lag0_mean + t_lag0_min + t_lag7_max + t_lag7_mean + 
+    t_lag7_min, data = arundo_df[, c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.41774 -0.55367 -0.06609  0.55463  2.49756 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.36535    1.45770   4.367 6.70e-05 ***
+t_lag0_mean -0.39459    0.07988  -4.940 9.89e-06 ***
+t_lag0_min   0.20944    0.06629   3.159  0.00274 ** 
+t_lag7_max   0.26291    0.14083   1.867  0.06804 .  
+t_lag7_mean -0.53136    0.16739  -3.174  0.00262 ** 
+t_lag7_min   0.46469    0.09713   4.784 1.67e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9021 on 48 degrees of freedom
+Multiple R-squared:  0.536,	Adjusted R-squared:  0.4876 
+F-statistic: 11.09 on 5 and 48 DF,  p-value: 3.92e-07
+
+
+[[4]]
+
+Call:
+lm(formula = Car ~ t_lag0_mean + t_lag0_min + t_lag7_max + t_lag7_mean + 
+    t_lag7_min, data = arundo_df[, c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.59118 -0.58807  0.08323  0.65860  2.13667 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  8.96960    1.75435   5.113 5.48e-06 ***
+t_lag0_mean -0.30980    0.09613  -3.223  0.00228 ** 
+t_lag0_min   0.12609    0.07978   1.580  0.12058    
+t_lag7_max   0.59055    0.16949   3.484  0.00106 ** 
+t_lag7_mean -1.01882    0.20146  -5.057 6.63e-06 ***
+t_lag7_min   0.50805    0.11689   4.346 7.16e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.086 on 48 degrees of freedom
+Multiple R-squared:  0.4558,	Adjusted R-squared:  0.3991 
+F-statistic:  8.04 on 5 and 48 DF,  p-value: 1.436e-05
+
+
+[[5]]
+
+Call:
+lm(formula = Chl.a ~ t_lag0_min + t_lag7_mean + t_lag7_min, data = arundo_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.9410 -1.2626  0.2438  1.3752  5.5907 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  31.9581     3.3898   9.428 1.12e-12 ***
+t_lag0_min    0.2914     0.1839   1.584    0.119    
+t_lag7_mean  -1.8822     0.3537  -5.321 2.43e-06 ***
+t_lag7_min    1.2717     0.2873   4.427 5.20e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.677 on 50 degrees of freedom
+Multiple R-squared:  0.4242,	Adjusted R-squared:  0.3897 
+F-statistic: 12.28 on 3 and 50 DF,  p-value: 3.877e-06
+
+
+[[6]]
+
+Call:
+lm(formula = Chl.b ~ t_lag0_mean + t_lag7_max + t_lag7_mean + 
+    t_lag7_min, data = arundo_df[, c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0122 -0.5502  0.0920  0.4858  1.8017 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  7.80729    1.43326   5.447 1.64e-06 ***
+t_lag0_mean -0.19513    0.07717  -2.528  0.01473 *  
+t_lag7_max   0.27625    0.13921   1.984  0.05282 .  
+t_lag7_mean -0.49510    0.16539  -2.993  0.00431 ** 
+t_lag7_min   0.28608    0.09605   2.979  0.00449 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8941 on 49 degrees of freedom
+Multiple R-squared:  0.3713,	Adjusted R-squared:  0.3199 
+F-statistic: 7.233 on 4 and 49 DF,  p-value: 0.0001166
+
+
+[[7]]
+
+Call:
+lm(formula = GSH ~ t_lag0_mean + t_lag0_min + t_lag7_max + t_lag7_mean, 
+    data = arundo_df[, c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.75544 -0.37241  0.00127  0.41152  1.98139 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  5.62821    0.98899   5.691 6.98e-07 ***
+t_lag0_mean  0.21871    0.06942   3.151  0.00278 ** 
+t_lag0_min  -0.14187    0.05750  -2.467  0.01716 *  
+t_lag7_max  -0.34212    0.12210  -2.802  0.00725 ** 
+t_lag7_mean  0.19447    0.10134   1.919  0.06082 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7843 on 49 degrees of freedom
+Multiple R-squared:  0.2479,	Adjusted R-squared:  0.1865 
+F-statistic: 4.037 on 4 and 49 DF,  p-value: 0.006589
+
+
+[[8]]
+
+Call:
+lm(formula = H202 ~ t_lag7_max + t_lag7_mean, data = arundo_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.64817 -0.27071 -0.04732  0.09772  1.27934 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.92828    0.40756   4.731 1.81e-05 ***
+t_lag7_max  -0.22159    0.04947  -4.479 4.25e-05 ***
+t_lag7_mean  0.23898    0.05483   4.359 6.35e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4281 on 51 degrees of freedom
+Multiple R-squared:  0.2824,	Adjusted R-squared:  0.2542 
+F-statistic: 10.03 on 2 and 51 DF,  p-value: 0.0002116
+
+
+[[9]]
+
+Call:
+lm(formula = MDA ~ t_lag7_max + t_lag7_mean, data = arundo_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.44873 -0.08249 -0.01421  0.06860  1.68427 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.63029    0.27984  -2.252  0.02864 *  
+t_lag7_max   0.12412    0.03397   3.654  0.00061 ***
+t_lag7_mean -0.11166    0.03765  -2.966  0.00458 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2939 on 51 degrees of freedom
+Multiple R-squared:  0.2913,	Adjusted R-squared:  0.2635 
+F-statistic: 10.48 on 2 and 51 DF,  p-value: 0.0001536
+
+
+[[10]]
+
+Call:
+lm(formula = P_tot ~ t_lag0_mean + t_lag0_min + t_lag7_max + 
+    t_lag7_mean, data = arundo_df[, c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9.8992 -3.1303 -0.6822  3.0648 18.2535 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  47.8849     6.5201   7.344 1.95e-09 ***
+t_lag0_mean   1.4603     0.4576   3.191  0.00248 ** 
+t_lag0_min    0.8030     0.3791   2.118  0.03925 *  
+t_lag7_max   -3.4605     0.8049  -4.299 8.13e-05 ***
+t_lag7_mean   1.0640     0.6681   1.593  0.11770    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.171 on 49 degrees of freedom
+Multiple R-squared:  0.4581,	Adjusted R-squared:  0.4139 
+F-statistic: 10.36 on 4 and 49 DF,  p-value: 3.697e-06
+
+

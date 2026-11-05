@@ -1,0 +1,247 @@
+[[1]]
+
+Call:
+lm(formula = ALA ~ t_lag0_mean + t_lag0_min + t_lag7_max + t_lag7_mean, 
+    data = artemisia_df[, c(i + 4, 16:37)])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.303823 -0.061229 -0.002782  0.057769  0.217064 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.715301   0.132904  -5.382 2.06e-06 ***
+t_lag0_mean -0.055649   0.009328  -5.966 2.64e-07 ***
+t_lag0_min  -0.019470   0.007728  -2.520 0.015061 *  
+t_lag7_max   0.065522   0.016407   3.993 0.000218 ***
+t_lag7_mean  0.037710   0.013618   2.769 0.007917 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1054 on 49 degrees of freedom
+Multiple R-squared:  0.8043,	Adjusted R-squared:  0.7884 
+F-statistic: 50.36 on 4 and 49 DF,  p-value: < 2.2e-16
+
+
+[[2]]
+
+Call:
+lm(formula = ALA_D ~ t_lag0_mean + t_lag0_min + t_lag7_max + 
+    t_lag7_mean + t_lag7_min, data = artemisia_df[, c(i + 4, 
+    16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.27081 -0.42077 -0.00099  0.49914  1.29686 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.02053    1.39476  -0.015  0.98832    
+t_lag0_mean -0.49092    0.06466  -7.592  1.8e-09 ***
+t_lag0_min  -0.17041    0.05963  -2.858  0.00655 ** 
+t_lag7_max   0.22874    0.11872   1.927  0.06063 .  
+t_lag7_mean  0.33055    0.13648   2.422  0.01972 *  
+t_lag7_min   0.16781    0.08101   2.071  0.04435 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7302 on 43 degrees of freedom
+  (5 osservazioni eliminate a causa di valori mancanti)
+Multiple R-squared:   0.78,	Adjusted R-squared:  0.7544 
+F-statistic: 30.49 on 5 and 43 DF,  p-value: 4.168e-13
+
+
+[[3]]
+
+Call:
+lm(formula = AsA ~ t_lag0_mean + t_lag0_min + t_lag7_mean, data = artemisia_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7364 -1.1893 -0.0936  1.4795  5.1138 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   1.2235     1.5999   0.765   0.4480    
+t_lag0_mean  -1.0512     0.1597  -6.584 2.69e-08 ***
+t_lag0_min    0.3762     0.1701   2.212   0.0316 *  
+t_lag7_mean   0.9939     0.1814   5.479 1.39e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.327 on 50 degrees of freedom
+Multiple R-squared:  0.4658,	Adjusted R-squared:  0.4338 
+F-statistic: 14.53 on 3 and 50 DF,  p-value: 6.212e-07
+
+
+[[4]]
+
+Call:
+lm(formula = Car ~ t_lag7_min, data = artemisia_df[, c(i + 4, 
+    16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1895 -1.0473 -0.2282  1.0902  4.6681 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.95688    0.59163   8.378 3.23e-11 ***
+t_lag7_min   0.22794    0.04317   5.280 2.57e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.782 on 52 degrees of freedom
+Multiple R-squared:  0.349,	Adjusted R-squared:  0.3365 
+F-statistic: 27.87 on 1 and 52 DF,  p-value: 2.57e-06
+
+
+[[5]]
+
+Call:
+lm(formula = Chl.a ~ t_lag7_min, data = artemisia_df[, c(i + 
+    4, 16:37)])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-8.578 -3.463 -1.478  4.087 15.376 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  16.1064     1.7780   9.059 2.81e-12 ***
+t_lag7_min    0.4634     0.1297   3.572 0.000775 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.355 on 52 degrees of freedom
+Multiple R-squared:  0.197,	Adjusted R-squared:  0.1816 
+F-statistic: 12.76 on 1 and 52 DF,  p-value: 0.0007746
+
+
+[[6]]
+
+Call:
+lm(formula = Chl.b ~ t_lag0_min + t_lag7_max + t_lag7_min, data = artemisia_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.1322 -1.7544 -0.0786  1.3803  8.3079 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   9.9592     3.6023   2.765  0.00796 **
+t_lag0_min    0.6122     0.1878   3.259  0.00201 **
+t_lag7_max   -0.5746     0.2277  -2.523  0.01485 * 
+t_lag7_min    0.3859     0.1963   1.965  0.05493 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.626 on 50 degrees of freedom
+Multiple R-squared:  0.2558,	Adjusted R-squared:  0.2111 
+F-statistic: 5.729 on 3 and 50 DF,  p-value: 0.001891
+
+
+[[7]]
+
+Call:
+lm(formula = GSH ~ t_lag0_mean + t_lag0_min + t_lag7_max, data = artemisia_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7164 -0.5994 -0.2408  0.5217  6.1543 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -5.5859     1.6873  -3.311 0.001733 ** 
+t_lag0_mean  -0.5150     0.1424  -3.615 0.000696 ***
+t_lag0_min   -0.3656     0.1189  -3.075 0.003410 ** 
+t_lag7_max    0.8945     0.1524   5.868  3.5e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.623 on 50 degrees of freedom
+Multiple R-squared:  0.4845,	Adjusted R-squared:  0.4536 
+F-statistic: 15.67 on 3 and 50 DF,  p-value: 2.598e-07
+
+
+[[8]]
+
+Call:
+lm(formula = H202 ~ t_lag0_mean + t_lag7_mean + t_lag7_min, data = artemisia_df[, 
+    c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57283 -0.18757 -0.03353  0.10390  1.04939 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.25586    0.40444  -0.633  0.52986    
+t_lag0_mean -0.14144    0.02071  -6.828 1.11e-08 ***
+t_lag7_mean  0.14084    0.04686   3.006  0.00413 ** 
+t_lag7_min   0.06560    0.03446   1.904  0.06274 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3218 on 50 degrees of freedom
+Multiple R-squared:  0.6482,	Adjusted R-squared:  0.6271 
+F-statistic: 30.71 on 3 and 50 DF,  p-value: 2.111e-11
+
+
+[[9]]
+
+Call:
+lm(formula = MDA ~ t_lag0_mean + t_lag0_min + t_lag7_max + t_lag7_mean + 
+    t_lag7_min, data = artemisia_df[, c(i + 4, 16:37)])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.37966 -0.07468  0.01170  0.07000  0.44821 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.16554    0.24412  -0.678   0.5010    
+t_lag0_mean -0.07801    0.01338  -5.831 4.53e-07 ***
+t_lag0_min  -0.01661    0.01110  -1.496   0.1411    
+t_lag7_max   0.04887    0.02359   2.072   0.0436 *  
+t_lag7_mean  0.04289    0.02803   1.530   0.1326    
+t_lag7_min   0.03017    0.01627   1.855   0.0698 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1511 on 48 degrees of freedom
+Multiple R-squared:  0.7137,	Adjusted R-squared:  0.6839 
+F-statistic: 23.93 on 5 and 48 DF,  p-value: 5.408e-12
+
+
+[[10]]
+
+Call:
+lm(formula = P_tot ~ t_lag0_mean + t_lag0_min + t_lag7_max + 
+    t_lag7_mean + t_lag7_min, data = artemisia_df[, c(i + 4, 
+    16:37)])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.101  -3.091  -1.154   0.941  43.024 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -30.5594    15.5007  -1.971 0.055126 .  
+t_lag0_mean  -1.1059     0.7186  -1.539 0.131144    
+t_lag0_min   -4.2854     0.6627  -6.467 7.65e-08 ***
+t_lag7_max    1.7807     1.3194   1.350 0.184189    
+t_lag7_mean   5.6781     1.5168   3.743 0.000534 ***
+t_lag7_min   -2.3224     0.9003  -2.579 0.013398 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.116 on 43 degrees of freedom
+  (5 osservazioni eliminate a causa di valori mancanti)
+Multiple R-squared:  0.7147,	Adjusted R-squared:  0.6815 
+F-statistic: 21.54 on 5 and 43 DF,  p-value: 9.853e-11
+
+
