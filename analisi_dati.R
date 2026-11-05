@@ -1,7 +1,7 @@
 # install.packages(c("mplot", "leaps", "bestglm", "car"))
 ###############################################################################
 
-setwd("C:\\aaa_lavori\\lav_pigna_metabolic\\analisi")
+setwd("")
 
 
 overall_p <- function(my_model) {
